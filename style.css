@@ -26,6 +26,14 @@ body {
     transition-delay: 0.08s;
 }
 
+.navigation {
+    transition: all .2s ease-in-out;
+}
+
+.navigation:hover {
+    transform: scale(1.1);
+}
+
 .navigation.active {
     width: 200px;
     height:200px;
@@ -66,4 +74,9 @@ body {
 .navigation.active span:hover ion-icon {
     color: #3cff8d;
     filter: drop-shadow(0 0 2px #3cff8d) drop-shadow(0 0 2px #3cff8d) drop-shadow(0 0 15px #3cff8d);
+    transition: all .2s ease-in-out;
+}
+
+.navigation.active span:hover ion-icon {
+    transform: scale(1.1);
 }
